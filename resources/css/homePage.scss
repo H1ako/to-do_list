@@ -1,0 +1,69 @@
+@import "Imports/normalize.scss";
+@import "Imports/variables.scss";
+@import "Imports/fonts.scss";
+// ===Common===
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: $color-bg;
+}
+.section-inner{
+    width: 80vw;
+    margin: 0 auto;
+}
+// ===/Common===
+
+// ===Header===
+.header-hidden{
+    transform: translateY(-110%);
+}
+header{
+    width: 100%;
+    position: fixed;
+    background: $color-header-bg;
+    border-bottom: 0.1rem solid darken(white, 70%);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .4);
+    top: 0;
+    transition: all .3s ease;
+
+    .section-inner{
+        display: flex;
+        position: relative;
+        min-height: 6rem;
+        justify-content: flex-end;
+        align-items: center;
+
+        .profile{
+            position: relative;
+            padding: .5rem;
+            display: flex;
+            align-items: center;
+            img{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            &-info {
+                position: relative;
+                // width: 80%;
+                @include fontOpenSans;
+                margin-left: 1rem;
+                text-align: center;
+            	&__name {
+                    // max-width: 100%
+                    color: white;
+                    font-size: $fontSize-header-profile-name;
+            	}
+            }
+        }
+    }
+}
+// ===/Header===
+
+// ===Main===
+// ===/Main===

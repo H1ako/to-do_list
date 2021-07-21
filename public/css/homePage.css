@@ -339,3 +339,63 @@ template {
 [hidden] {
   display: none;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #2d2e30;
+}
+
+.section-inner {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.header-hidden {
+  transform: translateY(-110%);
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background: #252326;
+  border-bottom: 0.1rem solid #4d4d4d;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  top: 0;
+  transition: all 0.3s ease;
+}
+header .section-inner {
+  display: flex;
+  position: relative;
+  min-height: 6rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .section-inner .profile {
+  position: relative;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+header .section-inner .profile img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+header .section-inner .profile-info {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 1rem;
+  text-align: center;
+}
+header .section-inner .profile-info__name {
+  color: white;
+  font-size: 1.6rem;
+}

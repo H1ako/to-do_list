@@ -1,4 +1,16 @@
 // ===Common===
+$color-bg: #2d2e30;
+
+@mixin fontOpenSans{
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin fontOpenBold{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+@mixin fontRobotoBold{
+    font-family: 'Roboto', sans-serif;
+}
 
 // ==Adaptive Sizes==
 $screen-sm-min: 576px;
@@ -12,3 +24,11 @@ $screen-md-max: 991px;
 $screen-lg-max: 1199;
 // ==/Adaptive Sizes==
 //===/Common===
+
+// ===Header===
+$color-header-bg: #252326;
+$fontSize-header-profile-name: 1.6rem;
+// ===/Header===
+
+// ===Main===
+// ===/Main===
